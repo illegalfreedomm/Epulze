@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import { useNavigate} from 'react-router-dom';
+import './HomePage.css';
 
 const HomePage=()=>{
     const [ShowLogin,setshowLogin]=useState(false);
@@ -21,7 +22,8 @@ const HomePage=()=>{
     return(
         <div className='main-page'>
             <div className='first-div'>
-                <h1 id="title">Welcome To Epulze mfs</h1>
+                <h1 id="title">Welcome To EPuLzE</h1>
+                
 
             </div>
             <div className='sec-div'>
@@ -29,28 +31,33 @@ const HomePage=()=>{
                 {ShowLogin ? (
                     <div className='login-area'>
                     <button id="back-login" onClick={handlebackLogin}>Back</button>
-                    <label htmlFor='username'></label>
+                    <h1 id='login-title'>LOGIN</h1>
                     <input
                         type='text'
                         placeholder='UserName'
                         id='username'
 
                         />
-                    <label htmlFor='password'></label>
+                    
                     <input
                         type='text'
-                        placeholder='UserName'
+                        placeholder='Password'
                         id='password'
 
                         />
+                    <button id='login-butt'>Login</button>
                     </div>
+                    
             
-                ):(<button onClick={handleSLogin}>LogIN</button>
+                ):(<button id='login-show-butt' onClick={handleSLogin}>→ LogIN</button>
 
 
                 )}
+
+            </div>
+            <div className='third-div'>
                 <h3>New Here register Yourself</h3>
-                <button id='signup-butt' onClick={handleSignUp}>Sign Up</button>
+                <button id='signup-butt' onClick={handleSignUp}>→ Sign Up</button>
             </div>
         </div>
     )
