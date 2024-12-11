@@ -21,7 +21,7 @@ const HomePage=()=>{
     return(
         <div className='main-page'>
             <div className='first-div'>
-                <h1 id="title">Welcome To Epulze</h1>
+                <h1 id="title">Welcome To Epulze mfs</h1>
 
             </div>
             <div className='sec-div'>
