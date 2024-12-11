@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-import { useNavigate} from 'react-router-dom';
+import { useNavigate,Link} from 'react-router-dom';
 import './HomePage.css';
 
 const HomePage=()=>{
@@ -21,6 +21,14 @@ const HomePage=()=>{
 
     return(
         <div className='main-page'>
+            <div className='navigator'>
+                <nav className='nav-0'>
+                    <button id='back-butt'>Back</button>
+                    <Link to='' id='nav-links'>Home</Link>
+                    <Link to='' id='nav-links'>Menu</Link>
+                    <Link to='' id='nav-links'>Sign In</Link>
+                </nav>
+            </div>
             <div className='first-div'>
                 <h1 id="title">Welcome To EPuLzE</h1>
                 
@@ -55,6 +63,7 @@ const HomePage=()=>{
                 )}
 
             </div>
+            <img id='tourn-img' src='https://i.ytimg.com/vi/ETV5KE-ARoE/maxresdefault.jpg'/>
             <div className='third-div'>
                 <h3>New Here register Yourself</h3>
                 <button id='signup-butt' onClick={handleSignUp}>→ Sign Up</button>

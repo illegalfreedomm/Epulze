@@ -8,6 +8,56 @@ body{
     background-color: rgb(185, 207, 248);
 }
 
+.nav-0{
+    display:flex;
+    justify-content: center;
+    gap: 5%;
+    height: 1.1cm;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid black;
+}
+
+.nav-0 #back-butt{
+    font-size: 1.2rem;
+    font-family: 'cool';
+    border: solid 2px black;
+    text-shadow: 2px 2px black;
+    background-color: rgb(43, 83, 170);
+    color: rgb(255, 255, 255);
+    margin-right: 26%;
+    margin-left: -35%;
+    margin-top:24px ;
+    height: 0.9cm;
+    transform: rotate(-13deg);
+    transition: 0.4s;
+}
+
+.nav-0 #back-butt:hover{
+    transform: scale(1.2);
+}
+
+.nav-0 #nav-links{
+    font-family: 'cool';
+    color: rgb(39, 114, 199);
+    text-shadow: 2px 2px black;
+    padding: 1%;
+    transition: 0.4s;
+}
+
+.nav-0 #nav-links:hover{
+    transform: scale(1.2);
+}
+
+#tourn-img{
+    height: auto;
+    width: 30%;
+    border: solid 3px black;
+    transform: rotate(15deg);
+    margin-top: -4%;
+    margin-left: 60%;
+    margin-bottom: -12%;
+}
+
 .first-div{
     display: flex;
     
