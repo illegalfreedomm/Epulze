@@ -93,15 +93,30 @@ body{
 }
 
 #login-show-butt{
-    background-color: rgb(19, 194, 86);
+
+    background-image: linear-gradient(to right,rgb(63, 241, 71) 50%,rgb(255, 255, 255) 50%);
+    background-position: 0%;
+    background-size: 200%;
     width: 10%;
     height: 1cm;
     font-family: 'cool';
+    transition: 0.5s;
+}
+
+#login-show-butt:hover{
+    background-position: 100%;
 }
 
 #signup-butt{
-    background-color: rgb(145, 231, 33);
+    background-image: linear-gradient(to right,rgb(186, 247, 72) 50%,rgb(207, 106, 106) 50%);
+    background-position: 0%;
+    background-size: 200%;
     width: 10%;
     height: 1cm;
     font-family: 'cool';
+    transition: 0.5s;
+}
+
+#signup-butt:hover{
+    background-position: 100%;
 }
