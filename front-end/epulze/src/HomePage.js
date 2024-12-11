@@ -2,12 +2,20 @@ import React,{useState,useEffect} from 'react';
 import { useNavigate} from 'react-router-dom';
 
 const HomePage=()=>{
-    const {ShowLogin,setShowLogin}=useState(false);
+    const [ShowLogin,setshowLogin]=useState(false);
 
     const navigate=useNavigate();
 
     const handleSignUp=()=>{
         navigate('Sign-up');
+    }
+
+    const handleSLogin=()=>{
+        setshowLogin(true);
+    }
+
+    const handlebackLogin=()=>{
+        setshowLogin(false);
     }
 
     return(
@@ -19,7 +27,8 @@ const HomePage=()=>{
             <div className='sec-div'>
                 <h3>Login In Here !!</h3>
                 {ShowLogin ? (
-                    <div>
+                    <div className='login-area'>
+                    <button id="back-login" onClick={handlebackLogin}>Back</button>
                     <label htmlFor='username'></label>
                     <input
                         type='text'
@@ -31,12 +40,12 @@ const HomePage=()=>{
                     <input
                         type='text'
                         placeholder='UserName'
-                        id='username'
+                        id='password'
 
                         />
                     </div>
             
-                ):(<button>LogIN</button>
+                ):(<button onClick={handleSLogin}>LogIN</button>
 
 
                 )}
