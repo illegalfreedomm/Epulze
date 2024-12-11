@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import { useNavigate} from 'react-router-dom';
 
 const HomePage=()=>{
-    const {ShowLogin,setShowLogin}
+    
 
     const navigate=useNavigate();
 
