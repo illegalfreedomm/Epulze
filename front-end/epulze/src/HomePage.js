@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import { useNavigate} from 'react-router-dom';
 
 const HomePage=()=>{
-    
+    const {ShowLogin,setShowLogin}=useState(false);
 
     const navigate=useNavigate();
 
@@ -18,7 +18,28 @@ const HomePage=()=>{
             </div>
             <div className='sec-div'>
                 <h3>Login In Here !!</h3>
-                <button id='login-butt' >LOGIN IN</button>
+                {ShowLogin ? (
+                    <div>
+                    <label htmlFor='username'></label>
+                    <input
+                        type='text'
+                        placeholder='UserName'
+                        id='username'
+
+                        />
+                    <label htmlFor='password'></label>
+                    <input
+                        type='text'
+                        placeholder='UserName'
+                        id='username'
+
+                        />
+                    </div>
+            
+                ):(<button>LogIN</button>
+
+
+                )}
                 <h3>New Here register Yourself</h3>
                 <button id='signup-butt' onClick={handleSignUp}>Sign Up</button>
             </div>
