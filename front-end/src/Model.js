@@ -12,7 +12,7 @@ const Model = forwardRef(({ scrollPosition }, ref) => {
     }
   });
 
-  return <primitive object={scene} ref={ref} />;
+  return <primitive object={scene} ref={ref} position={[0, 0, 0]} scale={[0.08, 0.08, 0.08]} />;
 });
 
 export default Model;
