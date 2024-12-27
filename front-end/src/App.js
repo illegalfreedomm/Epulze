@@ -21,7 +21,7 @@ function App() {
   return (
     <div className='full'>
       <div className='cont'>
-        <h1>Scroll Down to Rotate the Model</h1>
+        <h1>Illegal Freedom</h1>
       </div>
       <div className='model'>
         <Canvas>
