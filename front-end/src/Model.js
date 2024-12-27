@@ -3,7 +3,7 @@ import { useFrame } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
 
 const Model = forwardRef(({ scrollPosition }, ref) => {
-  const { scene } = useGLTF('/models/McLaren.glb'); // Path to your model
+  const { scene } = useGLTF('/models/dog.glb'); // Path to your model
 
   useFrame(() => {
     if (ref.current) {

@@ -1,23 +1,36 @@
-.cont{
-  background-color: rgba(85, 180, 66, 0.904);
-  height: 30cm;
+/* App.css */
+.full {
   position: relative;
-  z-index: 20;
-   
-}
-
-.cont h1{
-  color:black;
-}
-
-.model{
-  position: relative;
-  z-index: 30;
-  margin-top: -40%;
-  height: 20cm;
-}
-
-canvas{
   height: 100vh;
-  width: 40%;
+}
+
+.cont {
+  height: 100vh; /* Full screen for the "cont" div */
+  background-color: rgba(55, 62, 65, 0.233);
+  position: relative;
+  margin-bottom: 0%;
+  z-index: 1; /* Ensure the model appears on top of this */
+}
+
+.model {
+  position: absolute; /* Position it absolutely to overlay above the cont div */
+  top: 0;
+  left: 0;
+  margin-left: 20%;
+  margin-top: 0%;
+  width: 100%;
+  height: 120%; /* Ensure the model takes full screen height */
+  z-index: 0; /* Make sure the model stays above the content */
+}
+
+canvas {
+  display: block; /* Remove extra spacing */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+h2 {
+  margin-top: 50px;
+  text-align: center;
 }

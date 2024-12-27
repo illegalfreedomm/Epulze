@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className='full'>
       <div className='cont'>
         <h1>Scroll Down to Rotate the Model</h1>
       </div>
@@ -28,10 +28,10 @@ function App() {
           <ambientLight intensity={0.5} />
           <directionalLight position={[5, 5, 5]} />
           <Model ref={modelRef} scrollPosition={scrollPosition} />
-          <OrbitControls />
+          <OrbitControls maxDistance={700} minDistance={1} />
         </Canvas>
       </div>
-      <div style={{ height: '100vh', background: 'lightcoral' }}>
+      <div>
         <h2>More Content Here</h2>
       </div>
     </div>
