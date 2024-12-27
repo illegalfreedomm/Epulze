@@ -12,6 +12,10 @@
   z-index: 1; /* Ensure the model appears on top of this */
 }
 
+.cont h1{
+  text-align: center;
+}
+
 .model {
   position: absolute; /* Position it absolutely to overlay above the cont div */
   top: 0;
@@ -38,7 +42,7 @@ h2 {
 .more{
   position: relative;
   z-index: 30;
-  background-color: blue;
+  background-color: rgba(16, 16, 29, 0.438);
   height: 5cm;
   margin-top: -5%;
 }
