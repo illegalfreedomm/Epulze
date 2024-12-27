@@ -31,7 +31,7 @@ function App() {
           <OrbitControls maxDistance={700} minDistance={1} />
         </Canvas>
       </div>
-      <div>
+      <div className='more'>
         <h2>More Content Here</h2>
       </div>
     </div>
