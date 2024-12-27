@@ -21,7 +21,7 @@ function App() {
   return (
     <div className='full'>
       <div className='cont'>
-        <h1>Illegal Freedom</h1>
+        <h1>Illegal Freedom hey</h1>
       </div>
       <div className='model'>
         <Canvas>
